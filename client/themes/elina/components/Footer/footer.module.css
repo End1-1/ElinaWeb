@@ -1,0 +1,157 @@
+.root {
+    width: 100%;
+    background: #2B525A;
+    z-index: 8;
+}
+
+.body {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 62px 65px 46px;
+}
+
+.item {
+    margin-left: 87px;
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.item :global .blockTitle {
+    font-size: 16px !important;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    letter-spacing: 0.2px !important;
+    font-family: 'Arial AMU Bold';
+}
+
+.item :global .footerBlockTextItem {
+    margin-top: 18px;
+}
+
+.item :global .footerBlockTex {
+    font-size: 14px !important;
+    color: #FFFFFF !important;
+    letter-spacing: 0.2px !important;
+    white-space: nowrap;
+}
+
+.item :global .footerBlockTextItem a {
+    margin-left: 0 !important;
+}
+
+.contacts {
+    margin-left: 87px;
+}
+
+.logoField {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 12px;
+}
+
+.bottomField {
+    background: #2B525A;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomText {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+.sign {
+    font-family: cursive;
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 1050px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts {
+        margin-left: 67px;
+    } 
+}
+
+@media screen and (max-width: 992px) {
+    .body {
+        padding: 62px 40px 46px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bodyMobile {
+        composes: body;
+        padding: 19px 38px 41px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .column {
+        align-items: unset;
+    }
+
+    .contacts {
+        margin-left: unset;
+    }
+
+    .item :global .footerBlockTextField {
+        margin-top: 28px;
+    }
+
+    .bottomText {
+        font-size: 10px;
+    }
+
+    .item :global .blockTitle {
+        font-size: 12px !important;
+        margin-bottom: 28px !important;
+    }
+
+    .item :global a {
+        font-size: 12px !important;
+    }
+
+    .item :global .footerBlockTex {
+        font-size: 12px !important;
+    }
+
+    .logo {
+        width: 84px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .bodyMobile {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bodyMobile {
+        gap: 27px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .bodyMobile {
+        gap: unset;
+        row-gap: 20px;
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        justify-items: unset;
+    }
+}
