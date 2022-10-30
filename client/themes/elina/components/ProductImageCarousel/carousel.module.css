@@ -276,3 +276,24 @@
         max-height: 170px;
     }
 }
+
+
+.my-react-multi-carousel-track {
+    /* justify-content: center; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform,transition;
+    width: 100%;
+}
+
+.my-react-multi-carousel-item {
+    flex-grow: 3;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}

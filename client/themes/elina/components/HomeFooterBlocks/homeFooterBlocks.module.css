@@ -1,4 +1,6 @@
 .root {
+    position: relative;
+    top: 100px;
     margin-top: 61px;
     margin-bottom: 85px;
 }

@@ -1,4 +1,7 @@
 .root {
+position:sticky;
+top:0;
+z-index:10;
 }
 
 .top {
@@ -11,7 +14,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 57px;
-    max-width: 1310px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 65px;
 }
@@ -28,9 +31,25 @@
     
 }
 
+
 .phone, .email, .sale, .line {
     font-size: 16px;
     color: #ffffff;
+}
+
+.ullang {
+    list-style: none;
+    margin-left: 10px;
+    justify-content: flex-end;
+display:flex;
+text-align:left;
+flex-wrap:wrap;
+}
+
+.lilang {
+    color:#2B525A;
+    font-size:16px;
+    list-style: none;
 }
 
 .phoneIcon {
@@ -69,10 +88,9 @@
 .middle {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 5fr 1fr;
-    max-width: 1310px;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
     margin: 0 auto;
-    padding: 36px 65px 35px 65px;
+    padding: 16px 0px 15px 0px;
     background: #FFFFFF;
 }
 
@@ -101,8 +119,8 @@
 }
 
 .accountIcon span {
-    font-size: 32px;
-    color: #2B525A;
+    font-size: 25px;
+    color: #000;
 }
 
 .searchTriggerField {
@@ -112,8 +130,8 @@
 }
 
 .searchTriggerField span {
-    font-size: 32px;
-    color: #2B525A;
+    font-size: 25px;
+    color: #000;
 }
 
 .emailField {
@@ -207,8 +225,8 @@
 }
 
  .cartIcon span {
-    font-size: 32px;
-    color: #2B525A;
+    font-size: 25px;
+    color: #000;
 }
 
 .withoutSearch {

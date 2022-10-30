@@ -38,9 +38,10 @@ const CategoryPage = (props) => {
                 </Head>
                 {category.image && <div className={classes.image}>
                                 <Image src={`${category.image}`}/>
+                                {/*
                             <div className={classes.categoryNameField}>
                                 <RichContent html={category.description}/>
-                            </div>
+                            </div> */}
                         </div>
                 }
                 {categoryProducts.products && !categoryProducts.products.length ? 
@@ -78,18 +79,22 @@ const CategoryPage = (props) => {
                     <div>
                         {category.image && <div className={classes.image}>
                                 <Image src={`${category.image}`}/>
+                                {/*
                             <div className={classes.categoryNameField}>
                                 <RichContent html={category.description}/>
                             </div>
+                        */}
                         </div>
                         }
+                        {/*
                         <div className={classes.breadcrumbs}>
                             <Link to="/">
                                 <span>{__("home")}</span>
                             </Link>
                             <span className={classes.line}>|</span>
-                            <Breadcrumbs crumbs={breadcrumbs} classes={{label: classes.breadcrumbsLabel}}/>
+                         <Breadcrumbs crumbs={breadcrumbs} classes={{label: classes.breadcrumbsLabel}}/> 
                         </div>
+                    */}
                     </div>
                     <div className={classes.filtersAndList}>
                         {true ?
@@ -141,18 +146,22 @@ const CategoryPage = (props) => {
                     {category.image
                     && <div className={classes.image}>
                         <Image src={`${category.image}`}/>
+                        {/*
                         <div className={classes.categoryNameField}>
                             <RichContent html={category.description}/>
                         </div>
+                    */}
                     </div>
                     }
+                    {/*
                     <div className={classes.breadcrumbs}>
                         <Link to="/">
                             <span>{__("home")}</span>
                         </Link>
                         <span className={classes.line}>|</span>
-                        <Breadcrumbs crumbs={breadcrumbs} classes={{label: classes.breadcrumbsLabel}}/>
+                         <Breadcrumbs crumbs={breadcrumbs} classes={{label: classes.breadcrumbsLabel}}/> 
                     </div>
+                */}
                 </div>
                 <div className={classes.filtersAndList}>
                     <div className={classes.filterContainer}>

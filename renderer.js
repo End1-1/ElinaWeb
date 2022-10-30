@@ -76,7 +76,7 @@ export default async (req, res, bundleFileName) => {
                     <script type="text/javascript"> /*this is needed to fb social login*/</script>
                 </head>
                 <body>
-                    <div id="root">${content}</div>
+                    <div id="root" style="max-width:1600px; margin:0 auto;">${content}</div>
                     <script>
                         window.INITIAL_STATE=${JSON.stringify(store.getState())}
                     </script>

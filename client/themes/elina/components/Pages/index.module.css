@@ -1,6 +1,6 @@
 .body {
-    max-width: 1310px;
-    margin: 0 auto;
+    max-width: 1800px;
+    margin: 20px auto 0 auto;
 }
 
 .topBannerField {
@@ -165,7 +165,7 @@
 
 .productListTitleField {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     align-items: center;
     margin-top: 63px;
     text-transform: uppercase;
@@ -173,7 +173,7 @@
 
 .productListTitle {
     color: #2B3944;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 400;
     justify-self: center;
     white-space: nowrap;
@@ -198,18 +198,25 @@
 
 .discountedProductField {
     margin-top: 79px;
+    display:grid;
 }
 
 .discountField {
-    display: flex;
+    position: absolute;
+    left: 0;
+    display: grid;
     align-items: center;
-    max-width: 1310px;
+    width: 100%;
+    background: #a27b3d;
     margin: 0 auto;
 }
 
 .discountFieldTitle {
+    justify-self: center;
     font-size: 32px;
-    color: #D32626;
+    margin:10px;
+   /*  color: #D32626; */
+    color: white;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -218,12 +225,11 @@
     height: 2px;
     width: 100%;
     background: #2B3944;
-    max-width: 518px;
     margin-left: 63px;
 }
 
 .productSlider {
-    margin-top: 61px;
+    margin-top: 31px;
 }
 
 .textBannerOverlay {
@@ -241,7 +247,7 @@
     display: none;
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1800px) {
     .secondtRightTopBanner a img {
         min-width: 304px;
     }
@@ -251,7 +257,7 @@
     }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1800px) {
     .productSlider {
         max-width: 1080px;
         margin-left: auto;

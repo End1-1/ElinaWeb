@@ -20,6 +20,7 @@ const Contacts = (props) => {
 
     return (
         <div className={classes.root}>
+        {/*
             <div className={classes.phoneField}>
                 <ContactUs classes={{icon: classes.phone}}/>
             </div>
@@ -27,6 +28,7 @@ const Contacts = (props) => {
                 <IconMoon name="email" classes={{icon: classes.email}}/>
                 <span className={classes.emailText}>{storeEmail}</span>
             </div>
+        */}
             <div className={classes.socialField}>
                 {
                    socialPages && socialPages.length

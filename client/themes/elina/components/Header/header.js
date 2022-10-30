@@ -56,36 +56,7 @@ const Header  = props => {
 
     return (
         <div className={classes.root}>
-            <div className={classes.top}>
-                <div className={classes.topBody}>
-                    <div className={classes.row}></div>
-                    
-                    <div className={classes.row}>
-                        <div className={`${classes.saleField}`} >
-                            <span className={classes.sale}>
-                                {__("header.middle.text")}
-                            </span>
-                        </div>
-                    </div>
-                    {width > 1030 ? <div className={classes.contactsFieldRow}>
-                            <div className={`${classes.contactsField}`} >
-                                <ContactUs classes={{ number: classes.phone, phoneIcon: classes.phoneIcon }}/>
-                                <span className={classes.line}>|</span>
-                                <div className={classes.emailField}>
-                                    <IconMoon name="email"/>
-                                    <span className={classes.email}>{storeEmail}</span>
-                                </div>
-                            </div>
-                            <div className={classes.languageField} >
-                                <LanguageSelect />
-                            </div>
-                        </div>
-                        :
-                        null
-                    }
-                    
-                </div>
-            </div>
+
             <div className={openSearch ? classes.middleOpenSearch : classes.middle}>
                 <div className={classes.navTrigger}><NavTrigger/></div> 
                 <div className={classes.logoBlock}>
@@ -105,6 +76,7 @@ const Header  = props => {
                             menuItem: classes.menuItem
                         }}/>
                     </div>
+                
                 }
                 {
                     !openSearch &&
@@ -137,9 +109,6 @@ const Header  = props => {
                             null
                         }
                         {openModal && <div className={classes.overlay} onClick={() =>setIsOpenModal(false)}></div>}
-                        <div className={classes.languageField} >
-                            <LanguageSelect />
-                        </div>
                     </div>
                 }
                 {
@@ -165,6 +134,21 @@ const Header  = props => {
                         />
                     :   null
                 }
+
+                
+                {
+                !openSearch && 
+                <div>
+                    <ul className={classes.ullang}>
+                        <li>
+                            <a className={classes.lilang} href='https://k.elina.am/hy'> HY |</a>
+                            <a className={classes.lilang} href='https://k.elina.am/ru'> RU |</a>
+                            <a className={classes.lilang} href='https://k.elina.am/hy'> EN </a>
+                        </li>
+                    </ul>
+                </div>
+                }
+
             </div>
             {width <= 1336 && width > 991 ? 
                 <div className={classes.withoutSearch}>
@@ -175,6 +159,7 @@ const Header  = props => {
                 :
                 null
             }
+
         </div>
     );
 }

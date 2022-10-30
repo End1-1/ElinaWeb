@@ -67,9 +67,10 @@ const Footer = (props) => {
                             <div className={classes.item} onClick={handleClick}>
                                 <Block blockId="607ed7f855827425d9b8edc2"/>
                             </div>
-                            <div className={classes.contacts}>
-                                <Contacts/>
-                            </div>
+                    <div className={classes.item} onClick={handleClick}>
+                            <Block blockId="6339fe4ccd353d050f87ef98"/>
+                            <Contacts/>
+                        </div>
                         </div>
                     </Fragment>
         }
@@ -86,11 +87,14 @@ const Footer = (props) => {
                             <div className={classes.item} onClick={handleClick}>
                                 <Block blockId="604f06c486ff8dacd86e0745"/>
                             </div>
-                            <div className={classes.contacts}>
-                                <Contacts/>
-                            </div>
+                    <div className={classes.item} onClick={handleClick}>
+                            <Block blockId="6339fe4ccd353d050f87ef98"/>
+                            <Contacts/>
+                        </div>
+                        
                         </div>
                     </Fragment>
+
         }
         else {
             blocks = <Fragment>
@@ -103,9 +107,11 @@ const Footer = (props) => {
                         <div className={classes.item} onClick={handleClick}>
                             <Block blockId="607ed7f855827425d9b8edc2"/>
                         </div>
-                        <div className={classes.contacts}>
+                    <div className={classes.item} onClick={handleClick}>
+                            <Block blockId="6339fe4ccd353d050f87ef98"/>
                             <Contacts/>
                         </div>
+                        
                     </Fragment>
         }
         return blocks;
@@ -116,15 +122,18 @@ const Footer = (props) => {
             <div className={width <= 768 ? classes.bodyMobile : classes.body}>
                 {BLOCKS}
             </div>
+            {/*
             <div className={classes.logoField}>
                 <Logo/>
             </div>
+            */}
             <div className={classes.bottomField}>
                 <span className={classes.bottomText}>
                     <span className={classes.sign}>©</span>
                     <span>{__("footer.all.right.recerved")}</span>
                 </span>
             </div>
+        
             {signInSignUp 
                 ?   <SignInModal 
                         openModal={!!signInSignUp} 

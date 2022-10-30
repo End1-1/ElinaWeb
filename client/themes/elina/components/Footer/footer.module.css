@@ -1,7 +1,15 @@
 .root {
     width: 100%;
-    background: #2B525A;
+    margin-top: 40px;
+    background: #ffffff;
     z-index: 8;
+    -webkit-box-shadow: 0px -14px 25px rgba(153 151 151 / 15%);
+    position: absolute;
+    left:0;
+}
+
+.root > a .root > p .root > span {
+    color: #000000;
 }
 
 .body {
@@ -23,7 +31,7 @@
 .item :global .blockTitle {
     font-size: 16px !important;
     text-transform: uppercase;
-    color: #FFFFFF !important;
+    color: #000000 !important;
     letter-spacing: 0.2px !important;
     font-family: 'Arial AMU Bold';
 }
@@ -34,7 +42,7 @@
 
 .item :global .footerBlockTex {
     font-size: 14px !important;
-    color: #FFFFFF !important;
+    color: #000000 !important;
     letter-spacing: 0.2px !important;
     white-space: nowrap;
 }
@@ -54,18 +62,20 @@
 }
 
 .bottomField {
-    background: #2B525A;
+    background: #a27b3d;
     height: 66px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    left:0;
+    width:100%;
 }
 
 .bottomText {
-    font-size: 16px;
-    color: #FFFFFF;
+    font-size: 18px;
+    color: #ffffff;
     line-height: 20px;
-    opacity: 0.5;
 }
 
 .sign {

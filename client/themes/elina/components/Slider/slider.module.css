@@ -160,17 +160,15 @@
     display: flex;
     width: 100%;
     height: auto;
-    display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
 .dots {
-    display: flex;
     width: 100%;
     flex-direction: row;
     position: absolute;
-    bottom: 13%;
+    bottom: 0px;
     display: flex;
     justify-content: center;
 }
@@ -217,7 +215,7 @@
     width: 17px;
     height: 17px;
     border-radius: 50%;
-    background: #fff;
+    background: #a2a3a2;
 }
 
 .dotWrapper button:disabled .dotStyleWrapper{
