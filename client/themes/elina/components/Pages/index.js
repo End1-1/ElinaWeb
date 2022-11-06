@@ -65,7 +65,7 @@ const Index = (props) => {
                                 buttonPrev:classes.buttonPrev,
                                 buttonNext:classes.buttonNext,
                             }}
-                            visibleItems={width <= 410 ? 1 : width <= 768 ? 2 : width <= 900 ? 3 : 4}
+                            visibleItems={width <= 410 ? 1 : width <= 768 ? 2 : width <= 900 ? 2 : width <= 1800 ? 3 : 4}
                         />
                     </div>
                 
@@ -99,7 +99,7 @@ const Index = (props) => {
                                 buttonPrev:classes.buttonPrev,
                                 buttonNext:classes.buttonNext,
                             }}
-                            visibleItems={width <= 410 ? 1 : width <= 768 ? 2 : width <= 900 ? 3 : width <= 1080 ? 4 : width <= 1350 ? 5 : 6}
+                            visibleItems={width <= 410 ? 1 : width <= 768 ? 2 : width <= 900 ? 3 : width <= 1350 ? 4 : width <= 1800 ? 5 : 6}
                         />
                     </div>
                 </div>
